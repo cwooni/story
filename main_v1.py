@@ -1,7 +1,7 @@
 import streamlit as st
 from openai import OpenAI
 from langchain.chat_models import ChatOpenAI
-client = st.secrets["auth_key"]
+client = OpenAI(api_key=st.secrets["auth_key"])
 
 
 profile = """# MISSION

@@ -61,8 +61,8 @@ if prompt := st.chat_input("내용을 입력해주세요"):
     st.session_state.messages.append({"role": "user", "content": prompt})
     with st.chat_message("user"):
         st.markdown(prompt)
-        
-    st.session_state.messages.append({"role": "assistant", "content": f"{profile}"})
+
+    # st.session_state.messages.append({"role": "assistant", "content": f"{profile}"})
     with st.chat_message("assistant"):
         message_placeholder = st.empty()
         full_response = ""
